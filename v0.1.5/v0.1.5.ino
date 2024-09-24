@@ -53,7 +53,7 @@ ISR(TIMER1_COMPA_vect) {
 
 void adjustPower() {
   int potValue = analogRead(POT);
-  firingDuration = map(potValue, 1, 1024, 3800, 10500);
+  firingDuration = map(potValue, 1, 1024, 4000, 12000);
   //firingDuration = double(potValue / 1023.0) * 10000;
 }
 
